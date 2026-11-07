@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>You're Invited — Davy's 60th, Thailand</title>
+<title>You're Invited — Davy's 60th, Marrakech</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -403,6 +403,23 @@
     bottom: 0; left: 0; right: 0;
     width: 100%;
     height: 180px;
+  }
+
+
+  /* hero scenery: palms + camel caravan */
+  .hero-scene{ position:absolute; pointer-events:none; z-index:1; }
+  .hero-scene svg{ display:block; width:100%; height:100%; }
+  .scene-palm-l{ left:-18px; bottom:70px; width:260px; height:340px; }
+  .scene-palm-r{ transform:scaleX(-1); right:-14px; bottom:62px; width:230px; height:300px; }
+  .scene-palm-r2{ right:150px; bottom:84px; width:120px; height:170px; opacity:.85; }
+  .scene-caravan{ left:50%; bottom:78px; width:520px; height:110px; transform: translateX(-8%); }
+  .scene-atlas{ left:0; right:0; bottom:100px; height:130px; opacity:.5; }
+  @media(max-width: 720px){
+    .hero{ padding-bottom: 170px; }
+    .scene-palm-l{ width:130px; height:180px; bottom:70px; left:-14px; }
+    .scene-palm-r{ width:120px; height:165px; bottom:64px; right:-12px; }
+    .scene-palm-r2{ display:none; }
+    .scene-caravan{ width:280px; height:62px; left:50%; bottom:76px; transform: translateX(-50%); }
   }
 
   .eyebrow{
@@ -1357,7 +1374,7 @@
   <div id="secret-page">
     <button class="secret-close" onclick="closeSecretPage()">&times; Close</button>
     <div class="wrap secret-wrap">
-      <p class="eyebrow">DAY 7 · FRIDAY 4 FEBRUARY</p>
+      <p class="eyebrow">DAY 6 · THURSDAY 6 APRIL</p>
       <h1>Davy's 60th — The Plan</h1>
       <p class="secret-note">This page only you can see — nothing here shows up anywhere else on the site. Send over the full breakdown and I'll build it out hour by hour below.</p>
       <div id="secret-timeline">
@@ -1367,7 +1384,7 @@
         </div>
         <div class="secret-slot">
           <span class="secret-time">Early PM</span>
-          <div><h4>Free time — beach optional</h4><p>Anyone who wants to head to the beach can go enjoy it. Open until early afternoon — just need everyone back in time to get ready.</p></div>
+          <div><h4>Free time — medina or pool</h4><p>Anyone who wants to wander the medina or just stay by the pool can. Open until early afternoon — just need everyone back in time to get ready.</p></div>
         </div>
         <div class="secret-slot">
           <span class="secret-time">2:00 PM</span>
@@ -1379,7 +1396,7 @@
         </div>
         <div class="secret-slot">
           <span class="secret-time">4–5 PM</span>
-          <div><h4>Traditional Thai dancers</h4><p>Performance to kick off the evening.</p></div>
+          <div><h4>Moroccan music &amp; dancers</h4><p>Performance to kick off the evening — Gnawa musicians or traditional dancers, still to be booked.</p></div>
         </div>
         <div class="secret-slot">
           <span class="secret-time">6:00 PM</span>
@@ -1401,7 +1418,7 @@
           <span class="secret-time">Dessert</span>
           <div>
             <h4>The highlight of the evening</h4>
-            <p>Fireworks in the background as dessert comes out. A 3-layer naked cake, made by Renato the day before — fillings still to be decided, built around Davy's favourites. Eating on the terrace, taking in the fireworks and the setting.</p>
+            <p>Fireworks in the background as dessert comes out (to check with the villa and local rules once it's booked). A 3-layer naked cake, made by Renato the day before — fillings still to be decided, built around Davy's favourites. Eating on the terrace, taking in the fireworks and the setting.</p>
           </div>
         </div>
       </div>
@@ -1442,7 +1459,6 @@
     <button class="nav-close" onclick="toggleNav()">&times;</button>
     <a href="#top" onclick="toggleNav()" data-i18n="nav.home"></a>
     <a href="#villa-section" onclick="toggleNav()" data-i18n="nav.villa"></a>
-    <a href="#villa-rules-section" onclick="toggleNav()" data-i18n="nav.rules"></a>
     <a href="#whoscoming-section" onclick="toggleNav()" data-i18n="nav.whos"></a>
     <a href="#map-section" onclick="toggleNav()" data-i18n="nav.map"></a>
     <a href="#currency-section" onclick="toggleNav()" data-i18n="nav.currency"></a>
@@ -1458,6 +1474,32 @@
   <header class="hero" id="top">
     <div class="hero-haze"></div>
     <div class="hero-sun"></div>
+    <div class="hero-scene scene-atlas"><svg viewBox="0 0 1440 130" preserveAspectRatio="none"><path fill="#2a1424" d="M0 130 L0 80 L120 40 L210 70 L330 20 L450 66 L560 36 L700 84 L820 30 L940 72 L1060 24 L1200 70 L1320 38 L1440 74 L1440 130Z"/></svg></div>
+    <div class="hero-scene scene-palm-l"><svg viewBox="0 0 200 300" preserveAspectRatio="xMidYMax meet"><g fill="#190b17" stroke="none">
+<path d="M96 300 C100 230 92 170 104 112 L112 112 C102 172 110 232 114 300Z"/>
+<g transform="translate(108 112)">
+<g><path d="M0 0 C-20 -34 -70 -40 -104 -6 C-70 -22 -34 -18 0 0Z"/></g>
+<g><path d="M0 0 C-10 -42 -48 -70 -92 -58 C-56 -56 -26 -36 0 0Z"/></g>
+<g><path d="M0 0 C6 -48 30 -74 74 -70 C42 -62 18 -40 0 0Z"/></g>
+<g><path d="M0 0 C22 -32 66 -34 98 6 C64 -12 30 -14 0 0Z"/></g>
+<g><path d="M0 0 C-26 -6 -66 6 -88 44 C-58 22 -28 14 0 0Z"/></g>
+<g><path d="M0 0 C26 -2 62 12 80 50 C54 26 26 14 0 0Z"/></g>
+<g><path d="M0 0 C-2 -26 -2 -50 4 -74 C12 -50 6 -26 0 0Z"/></g>
+<circle cx="-4" cy="6" r="6"/><circle cx="6" cy="8" r="6"/>
+</g></g></svg></div>
+        <div class="hero-scene scene-palm-r"><svg viewBox="0 0 200 300" preserveAspectRatio="xMidYMax meet"><g fill="#190b17" stroke="none">
+<path d="M96 300 C100 230 92 170 104 112 L112 112 C102 172 110 232 114 300Z"/>
+<g transform="translate(108 112)">
+<g><path d="M0 0 C-20 -34 -70 -40 -104 -6 C-70 -22 -34 -18 0 0Z"/></g>
+<g><path d="M0 0 C-10 -42 -48 -70 -92 -58 C-56 -56 -26 -36 0 0Z"/></g>
+<g><path d="M0 0 C6 -48 30 -74 74 -70 C42 -62 18 -40 0 0Z"/></g>
+<g><path d="M0 0 C22 -32 66 -34 98 6 C64 -12 30 -14 0 0Z"/></g>
+<g><path d="M0 0 C-26 -6 -66 6 -88 44 C-58 22 -28 14 0 0Z"/></g>
+<g><path d="M0 0 C26 -2 62 12 80 50 C54 26 26 14 0 0Z"/></g>
+<g><path d="M0 0 C-2 -26 -2 -50 4 -74 C12 -50 6 -26 0 0Z"/></g>
+<circle cx="-4" cy="6" r="6"/><circle cx="6" cy="8" r="6"/>
+</g></g></svg></div>
+    <div class="hero-scene scene-caravan"><svg viewBox="0 0 400 80" preserveAspectRatio="xMidYMax meet"><defs><g id="camel"><path d="M6 40 C4 32 12 28 18 31 C20 22 28 20 32 29 C42 31 52 33 60 31 L68 15 C70 9 77 7 82 10 L92 13 C96 15 94 20 89 20 L80 23 L74 38 C72 46 66 48 60 48 L16 48 C10 48 7 45 6 40Z"/><rect x="12" y="44" width="5" height="22" rx="2"/><rect x="24" y="44" width="5" height="22" rx="2"/><rect x="52" y="44" width="5" height="22" rx="2"/><rect x="62" y="44" width="5" height="22" rx="2"/><path d="M6 36 C0 40 0 48 2 54 L5 53 C4 48 5 42 9 38Z"/></g></defs><g fill="#190b17"><use href="#camel" transform="translate(0 12)"/><use href="#camel" transform="translate(140 6) scale(1.05)"/><use href="#camel" transform="translate(280 12) scale(.95)"/><path d="M96 38 L140 36 M236 34 L280 38" stroke="#190b17" stroke-width="1.4" fill="none"/></g></svg></div>
     <svg class="hero-tide" viewBox="0 0 1440 180" preserveAspectRatio="none">
       <path fill="#5e2418" fill-opacity="0.9" d="M0,90 C240,140 480,50 720,80 C960,110 1200,50 1440,90 L1440,180 L0,180 Z"></path>
       <path fill="#241018" d="M0,120 C260,80 500,150 740,120 C980,90 1220,150 1440,120 L1440,180 L0,180 Z"></path>
@@ -1474,10 +1516,6 @@
         <a class="tile" href="#villa-section">
           <svg viewBox="0 0 32 32" fill="none"><path d="M5 16L16 7l11 9" stroke="currentColor" stroke-width="1.6"/><rect x="8" y="16" width="16" height="10" stroke="currentColor" stroke-width="1.6"/></svg>
           <span data-i18n="nav.villa"></span>
-        </a>
-        <a class="tile" href="#villa-rules-section">
-          <svg viewBox="0 0 32 32" fill="none"><rect x="6" y="4" width="20" height="24" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M11 11h10M11 16h10M11 21h6" stroke="currentColor" stroke-width="1.6"/></svg>
-          <span data-i18n="nav.rules"></span>
         </a>
         <a class="tile" href="#whoscoming-section">
           <svg viewBox="0 0 32 32" fill="none"><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/><circle cx="21" cy="14" r="3.2" stroke="currentColor" stroke-width="1.6"/><path d="M5 26c0-4 3.1-7 7-7s7 3 7 7M18 26c0-3.2 2.3-5.6 5.5-5.6S27 22.8 27 26" stroke="currentColor" stroke-width="1.6"/></svg>
@@ -1532,43 +1570,10 @@
       </div>
 
       <div class="villa-intro">
-        <span class="villa-tag" data-i18n="villas.anushka.tag"></span>
-        <h3>Villa Anushka</h3>
-        <div class="villa-loc" data-i18n="villas.anushka.loc"></div>
-        <p class="desc" data-i18n="villas.anushka.desc"></p>
+        <span class="villa-tag" data-i18n="villas.tbc.tag"></span>
+        <h3 data-i18n="villas.tbc.title"></h3>
+        <p class="desc" data-i18n="villas.tbc.desc"></p>
       </div>
-
-      <div class="carousel" id="carousel">
-        <div class="carousel-main" id="carousel-main">
-          <button class="carousel-arrow prev" onclick="carouselMove(-1)">&#8249;</button>
-          <button class="carousel-arrow next" onclick="carouselMove(1)">&#8250;</button>
-          <span class="carousel-count" id="carousel-count"></span>
-        </div>
-        <div class="carousel-thumbs" id="carousel-thumbs"></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="villa-rules" id="villa-rules-section">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow" data-i18n="rules.eyebrow"></p>
-        <h2 data-i18n="rules.title"></h2>
-        <p data-i18n="rules.sub"></p>
-      </div>
-
-      <div class="quickfacts-grid">
-        <div class="quickfact"><span class="qf-value">15:00</span><span class="qf-label" data-i18n="rules.checkin"></span></div>
-        <div class="quickfact"><span class="qf-value">11:00</span><span class="qf-label" data-i18n="rules.checkout"></span></div>
-        <div class="quickfact"><span class="qf-value">12</span><span class="qf-label" data-i18n="rules.maxguests"></span></div>
-        <div class="quickfact"><span class="qf-value mono" style="font-size:14px;" data-i18n="rules.selfcheckin.val"></span><span class="qf-label" data-i18n="rules.selfcheckin.label"></span></div>
-      </div>
-
-      <p class="rules-note" data-i18n-html="rules.smoking"></p>
-
-      <div class="rules-tags" id="rules-tags"></div>
-
-      <div class="amenity-grid" id="amenity-grid"></div>
     </div>
   </section>
 
@@ -1595,9 +1600,9 @@
 
       <div class="currency-card">
         <div class="currency-input-row">
-          <span class="currency-symbol mono">฿</span>
-          <input type="number" id="thb-input" value="1000" min="0" inputmode="decimal">
-          <span class="currency-tag mono">THB</span>
+          <span class="currency-symbol mono">DH</span>
+          <input type="number" id="mad-input" value="1000" min="0" inputmode="decimal">
+          <span class="currency-tag mono">MAD</span>
         </div>
 
         <div class="currency-results">
@@ -1628,10 +1633,10 @@
         <p class="map-label mono" data-i18n="map.overview.label"></p>
         <div class="map-frame-pair">
           <div class="map-frame">
-            <iframe src="https://www.google.com/maps?q=Bangkok,+Thailand&z=10&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps?q=Morocco&z=5&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
           <div class="map-frame">
-            <iframe src="https://www.google.com/maps?q=Koh+Samui,+Thailand&z=10&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps?q=Marrakech+Medina,+Morocco&z=13&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </div>
@@ -1639,16 +1644,11 @@
       <div class="map-block">
         <p class="map-label mono" data-i18n="map.closeup.label"></p>
         <div class="map-frame">
-          <iframe src="https://www.google.com/maps?q=Villa+Anushka+Koh+Samui,+82+Ban+Koh+Faan,+53+Village+No.3,+Tambon+Bo+Put,+Amphoe+Ko+Samui,+Surat+Thani+84320,+Thailand&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps?q=Jemaa+el-Fnaa,+Marrakech,+Morocco&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </div>
   </section>
-
-  <div id="lightbox" onclick="closeLightbox()">
-    <img id="lightbox-img" src="" alt="">
-    <button class="lightbox-close" onclick="closeLightbox(event)">&times;</button>
-  </div>
 
   <section class="itinerary" id="itinerary-section">
     <div class="wrap">
@@ -1685,29 +1685,58 @@
       <div class="extras-grid">
 
         <div class="extras-card">
-          <span class="extras-tag" data-i18n="extras.elephant.tag"></span>
-          <h3 data-i18n="extras.elephant.name"></h3>
-          <p class="extras-price mono">฿3,000 <span data-i18n="extras.perperson"></span></p>
-          <p class="extras-desc" data-i18n="extras.elephant.desc"></p>
+          <span class="extras-tag" data-i18n="extras.agafay.tag"></span>
+          <h3 data-i18n="extras.agafay.name"></h3>
+          <p class="extras-price mono">~£70 <span data-i18n="extras.perperson"></span></p>
+          <p class="extras-price-sub mono" data-i18n="extras.priceNote"></p>
+          <p class="extras-desc" data-i18n="extras.agafay.desc"></p>
           <div class="extras-rsvp-row">
-            <button class="extras-rsvp" data-activity="elephant" onclick="toggleExtraRSVP(this)">
+            <button class="extras-rsvp" data-activity="agafay" onclick="toggleExtraRSVP(this)">
               <span data-i18n="extras.rsvp"></span>
             </button>
-            <span class="extras-count mono" data-extra-count="elephant">–</span>
+            <span class="extras-count mono" data-extra-count="agafay">–</span>
           </div>
         </div>
 
         <div class="extras-card">
-          <span class="extras-tag" data-i18n="extras.boat.tag"></span>
-          <h3 data-i18n="extras.boat.name"></h3>
-          <p class="extras-price mono">~฿2,900 <span data-i18n="extras.perperson"></span></p>
-          <p class="extras-price-sub mono" data-i18n="extras.boat.priceNote"></p>
-          <p class="extras-desc" data-i18n="extras.boat.desc"></p>
+          <span class="extras-tag" data-i18n="extras.atlas.tag"></span>
+          <h3 data-i18n="extras.atlas.name"></h3>
+          <p class="extras-price mono">~£55 <span data-i18n="extras.perperson"></span></p>
+          <p class="extras-price-sub mono" data-i18n="extras.priceNote"></p>
+          <p class="extras-desc" data-i18n="extras.atlas.desc"></p>
           <div class="extras-rsvp-row">
-            <button class="extras-rsvp" data-activity="boat" onclick="toggleExtraRSVP(this)">
+            <button class="extras-rsvp" data-activity="atlas" onclick="toggleExtraRSVP(this)">
               <span data-i18n="extras.rsvp"></span>
             </button>
-            <span class="extras-count mono" data-extra-count="boat">–</span>
+            <span class="extras-count mono" data-extra-count="atlas">–</span>
+          </div>
+        </div>
+
+        <div class="extras-card">
+          <span class="extras-tag" data-i18n="extras.massage.tag"></span>
+          <h3 data-i18n="extras.massage.name"></h3>
+          <p class="extras-price mono">~£40 <span data-i18n="extras.perperson"></span></p>
+          <p class="extras-price-sub mono" data-i18n="extras.priceNote"></p>
+          <p class="extras-desc" data-i18n="extras.massage.desc"></p>
+          <div class="extras-rsvp-row">
+            <button class="extras-rsvp" data-activity="massage" onclick="toggleExtraRSVP(this)">
+              <span data-i18n="extras.rsvp"></span>
+            </button>
+            <span class="extras-count mono" data-extra-count="massage">–</span>
+          </div>
+        </div>
+
+        <div class="extras-card">
+          <span class="extras-tag" data-i18n="extras.cooking.tag"></span>
+          <h3 data-i18n="extras.cooking.name"></h3>
+          <p class="extras-price mono">~£45 <span data-i18n="extras.perperson"></span></p>
+          <p class="extras-price-sub mono" data-i18n="extras.priceNote"></p>
+          <p class="extras-desc" data-i18n="extras.cooking.desc"></p>
+          <div class="extras-rsvp-row">
+            <button class="extras-rsvp" data-activity="cooking" onclick="toggleExtraRSVP(this)">
+              <span data-i18n="extras.rsvp"></span>
+            </button>
+            <span class="extras-count mono" data-extra-count="cooking">–</span>
           </div>
         </div>
 
@@ -1726,12 +1755,12 @@
       </div>
 
       <div class="weather-grid">
-        <div class="weather-stat"><span class="w-value">29°C</span><span class="w-label" data-i18n="weather.high"></span></div>
-        <div class="weather-stat"><span class="w-value">25°C</span><span class="w-label" data-i18n="weather.low"></span></div>
-        <div class="weather-stat"><span class="w-value">28°C</span><span class="w-label" data-i18n="weather.sea"></span></div>
-        <div class="weather-stat"><span class="w-value">~5</span><span class="w-label" data-i18n="weather.rain"></span></div>
+        <div class="weather-stat"><span class="w-value">24°C</span><span class="w-label" data-i18n="weather.high"></span></div>
+        <div class="weather-stat"><span class="w-value">11°C</span><span class="w-label" data-i18n="weather.low"></span></div>
+        <div class="weather-stat"><span class="w-value">31°C</span><span class="w-label" data-i18n="weather.heat"></span></div>
+        <div class="weather-stat"><span class="w-value">~3</span><span class="w-label" data-i18n="weather.rain"></span></div>
         <div class="weather-stat"><span class="w-value">9h</span><span class="w-label" data-i18n="weather.sun"></span></div>
-        <div class="weather-stat" data-i18n="weather.uv"><span class="w-value" data-i18n="weather.uvval"></span><span class="w-label" data-i18n="weather.uvlabel"></span></div>
+        <div class="weather-stat"><span class="w-value" data-i18n="weather.uvval"></span><span class="w-label" data-i18n="weather.uvlabel"></span></div>
       </div>
       <p style="margin-top:28px; font-size:14px; color:var(--text-dim); font-weight:300; max-width:60ch;" data-i18n="weather.note"></p>
     </div>
@@ -1785,13 +1814,13 @@
             <line x1="95" y1="50" x2="125" y2="80"/>
             <line x1="125" y1="50" x2="95" y2="80"/>
           </g>
-          <!-- Thai socket -->
+          <!-- Moroccan socket (Type C/E) -->
           <g>
             <rect x="160" y="30" width="92" height="68" rx="10" fill="none" stroke="var(--gold)" stroke-width="2"/>
-            <rect x="192" y="48" width="6" height="20" rx="2" fill="var(--gold)"/>
-            <rect x="212" y="48" width="6" height="20" rx="2" fill="var(--gold)"/>
-            <circle cx="206" cy="82" r="4" fill="var(--gold)"/>
-            <text x="206" y="118" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--gold)">THAILAND</text>
+            <circle cx="193" cy="64" r="5" fill="var(--gold)"/>
+            <circle cx="219" cy="64" r="5" fill="var(--gold)"/>
+            <rect x="203" y="80" width="6" height="8" rx="1" fill="var(--gold)"/>
+            <text x="206" y="118" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--gold)">MOROCCO</text>
           </g>
         </svg>
         <p class="plug-label mono" data-i18n="travel.plug.label"></p>
@@ -1814,9 +1843,9 @@
 
         <div class="arrival-card">
           <span class="arrival-num mono">01</span>
-          <h3 data-i18n="arrival.samui.title"></h3>
-          <p data-i18n="arrival.samui.desc"></p>
-          <a id="arrival-email-btn" class="arrival-btn" href="#" data-i18n="arrival.samui.button"></a>
+          <h3 data-i18n="arrival.airport.title"></h3>
+          <p data-i18n="arrival.airport.desc"></p>
+          <a id="arrival-email-btn" class="arrival-btn" href="#" data-i18n="arrival.airport.button"></a>
         </div>
 
         <div class="arrival-card">
@@ -2184,43 +2213,40 @@
       "name.plusones.hint": "Anyone joining you? Partner, kids — separate names with commas.",
       "name.plusones.placeholder": "e.g. Davy, Jamie",
       "welcome.eyebrow": "YOU'RE IN",
-      "welcome.heading": "Hello {name}, we're so happy you're coming to Thailand to celebrate Davy's 60th with us. Here's everything you'll need to get there.",
+      "welcome.heading": "Hello {name}, we're so happy you're coming to Marrakech to celebrate Davy's 60th with us. Here's everything you'll need to get there.",
       "welcome.button": "Let's go",
-      "hero.title": "Davy's turning <em>60</em>, in Thailand",
-      "hero.dates": "KOH SAMUI · <span style='color:var(--coral)'>29 JANUARY &ndash; 11 FEBRUARY 2028</span>",
-      "hero.sub": "Two weeks together on the island, one big birthday in the middle of it. Have a look around and get ready.",
+      "hero.title": "Davy's turning <em>60</em>, in Marrakech",
+      "hero.dates": "MARRAKECH, MOROCCO · <span style='color:var(--coral)'>1 &ndash; 11 APRIL 2028</span>",
+      "hero.sub": "Eleven days together in the Red City, one big birthday in the middle of it. Have a look around and get ready.",
       "villas.eyebrow": "WHERE WE'RE STAYING",
-      "villas.title": "Meet Villa Anushka",
-      "villas.sub": "After weighing everything up, this is the one — here's a first look while we get the full write-up and photos ready.",
-      "villas.photosoon": "Photos coming soon",
-      "villas.anushka.tag": "Home for the week",
-      "villas.anushka.loc": "82, Ban Koh Faan, 53 Village No.3, Tambon Bo Put, Amphoe Ko Samui, Surat Thani 84320, Thailand",
-      "villas.anushka.desc": "Full details on the way — check back soon for the full story on the villa, the rooms, and what makes it special.",
-      "villas.linksoon": "Booking link coming soon",
+      "villas.title": "Our Marrakech home",
+      "villas.sub": "We're choosing the perfect place — a private villa with a pool, big enough for all of us. We'll share it here the moment it's booked.",
+      "villas.tbc.tag": "Coming soon",
+      "villas.tbc.title": "Villa to be confirmed",
+      "villas.tbc.desc": "We're looking at private villas and riad-style houses in and around Marrakech, with a pool, a terrace for the big night and space for everyone. Photos, address and check-in details will appear here as soon as it's confirmed.",
       "itin.eyebrow": "THE PLAN",
-      "itin.title": "Fourteen days, roughly mapped out",
+      "itin.title": "Eleven days, roughly mapped out",
       "itin.sub": "Nothing here is set in stone — this is a shape to fill in together once we're all there, not a schedule to follow to the minute.",
       "weather.eyebrow": "WHAT TO EXPECT",
-      "weather.title": "Weather in early February",
-      "weather.sub": "Good news — early February sits right in Koh Samui's driest, sunniest stretch of the year.",
+      "weather.title": "Weather in early April",
+      "weather.sub": "Good news — early April is one of the best times to visit Marrakech: warm, sunny and mostly dry, before the summer heat sets in.",
       "weather.high": "Average daytime high",
       "weather.low": "Average nighttime low",
-      "weather.sea": "Sea temperature",
+      "weather.heat": "Occasional warm-spell peak",
       "weather.rain": "Rainy days across the trip",
       "weather.sun": "Sunshine per day, on average",
       "weather.uvval": "Very High",
       "weather.uvlabel": "UV index — sunscreen is non-negotiable",
-      "weather.note": "Rain, if it comes, tends to be a short, heavy shower rather than an all-day drizzle. Humidity sits around 80%, so pack light, breathable fabrics.",
+      "weather.note": "Days are warm and evenings can get properly cool, so pack layers. A warm spell can push afternoons towards 30°C, and a spring shower is possible. The air is dry, so humidity isn't an issue.",
       "packing.eyebrow": "GETTING READY",
       "packing.title": "What to bring",
-      "packing.sub": "A loose packing list — nothing fancy required, just the essentials for sun, sea, and everything in between.",
+      "packing.sub": "A loose packing list — nothing fancy required, just the essentials for sun, souks, and everything in between.",
       "packing.everyone.label": "For everyone",
       "packing.everyone.title": "The basics",
       "packing.babies.label": "Travelling with little ones",
       "packing.babies.title": "Baby & toddler essentials",
       "nav.home": "Home",
       "nav.villa": "The Villa",
-      "nav.rules": "In the Villa",
       "nav.whos": "Who's Coming",
       "whos.eyebrow": "THE GUEST LIST",
       "whos.title": "Who's coming",
@@ -2229,7 +2255,7 @@
       "nav.currency": "Currency",
       "currency.eyebrow": "MONEY MATTERS",
       "currency.title": "Currency converter",
-      "currency.sub": "Live exchange rates, sourced from the European Central Bank.",
+      "currency.sub": "Live exchange rates for the Moroccan dirham, updated daily.",
       "nav.itinerary": "Itinerary",
       "nav.nearby": "Nearby",
       "nav.extras": "Optional Extras",
@@ -2238,58 +2264,55 @@
       "extras.sub": "A couple of things we're organising that aren't part of the main plan — totally optional, join if you'd like to.",
       "extras.perperson": "per person",
       "extras.rsvp": "I'm in",
-      "extras.elephant.tag": "Half-day",
-      "extras.elephant.name": "Elephant Sanctuary Visit",
-      "extras.elephant.desc": "An ethical, hands-off sanctuary visit — feeding and observing the elephants rather than riding them.",
-      "extras.boat.tag": "Evening",
-      "extras.boat.name": "Sunset Boat Trip",
-      "extras.boat.priceNote": "Approximate — final price confirmed closer to the date",
-      "extras.boat.desc": "An evening on the water watching the sun go down over the coast.",
+      "extras.priceNote": "Approximate — final price confirmed closer to the date",
+      "extras.agafay.tag": "Evening",
+      "extras.agafay.name": "Desert Trip & Dinner Under the Stars",
+      "extras.agafay.desc": "Head out to the Agafay desert, about 45 minutes from the city, for camels or quads at sunset, then a candlelit dinner under the stars.",
+      "extras.atlas.tag": "Full day",
+      "extras.atlas.name": "Atlas Mountains Day Trip",
+      "extras.atlas.desc": "Escape the city for the Atlas foothills — the green Ourika Valley, waterfalls, mountain views and a lunch by the river.",
+      "extras.massage.tag": "At the villa",
+      "extras.massage.name": "In-Villa Massage",
+      "extras.massage.desc": "A therapist comes to the villa so you can have a massage by the pool or in your room. Choose a time that suits you — slots to be arranged once we know numbers.",
+      "extras.cooking.tag": "Half-day",
+      "extras.cooking.name": "Moroccan Cooking Class",
+      "extras.cooking.desc": "Shop for ingredients in a local market, then learn to make a tagine and Moroccan salads — and eat what you've cooked.",
       "extras.payment": "If you'd like to join either of these, tap <strong>\"I'm in\"</strong> so we can book the right numbers. No rush on payment — you can settle up before the trip or once we're there, whichever's easier. Bank details to follow closer to the date.",
       "nearby.eyebrow": "WORTH THE TRIP",
       "nearby.title": "Things to do nearby",
-      "nearby.sub": "A few well-loved spots close to the villa, for the open days on the itinerary.",
+      "nearby.sub": "A few well-loved spots in and around Marrakech, for the open days on the itinerary.",
       "nav.weather": "Weather",
       "nav.packing": "What to Bring",
       "nav.travelinfo": "Before You Travel",
       "nav.arrival": "Arrival Info",
       "travel.eyebrow": "PLANNING AHEAD",
-      "rules.eyebrow": "THE PRACTICAL STUFF",
-      "rules.title": "In the villa",
-      "rules.sub": "Everything about staying at Villa Anushka — timings, house rules, and what's on hand.",
-      "rules.checkin": "Check-in (after)",
-      "rules.checkout": "Check-out (before)",
-      "rules.maxguests": "Maximum guests",
-      "rules.selfcheckin.val": "Self check-in",
-      "rules.selfcheckin.label": "With building staff",
-      "rules.smoking": "<strong>Smoking isn't permitted inside the rooms</strong>, but it is permitted outside.",
       "travel.title": "What to expect before travelling",
       "travel.sub": "A quick checklist to sort out before you fly — nothing urgent, just worth doing early.",
       "travel.plug.label": "PLUG TYPE",
-      "travel.plug.note": "UK plugs don't fit Thai sockets — bring a travel adapter.",
+      "travel.plug.note": "UK plugs don't fit Moroccan sockets — bring a travel adapter (Type C/E, 230V).",
       "travel.disclaimer": "Entry requirements can change — always double-check official guidance closer to your travel date.",
-      "arrival.eyebrow": "LANDING IN THAILAND",
+      "arrival.eyebrow": "LANDING IN MOROCCO",
       "arrival.title": "Once you've landed",
       "arrival.sub": "A few practical things to sort out the moment you touch down.",
-      "arrival.samui.title": "Flying into Koh Samui?",
-      "arrival.samui.desc": "We're based in Koh Samui, and we're organising pickup and transfer from Koh Samui airport. If you're routing through Bangkok first, that's completely fine — we just need your Koh Samui arrival flight number and time to arrange your transfer.",
-      "arrival.samui.button": "Send my arrival details ↗",
+      "arrival.airport.title": "Flying into Marrakech?",
+      "arrival.airport.desc": "We're based in Marrakech, and we're organising pickup and transfer from Marrakech Menara Airport (RAK). Just send us your arrival flight number and time so we can arrange your transfer.",
+      "arrival.airport.button": "Send my arrival details ↗",
       "arrival.whatsapp.title": "Any issues on the day?",
       "arrival.whatsapp.desc": "If anything comes up — a delay, a missed connection, anything at all — message Renato directly on WhatsApp and we'll sort it out.",
       "arrival.whatsapp.button": "Message on WhatsApp ↗",
       "arrival.driver.title": "Your driver",
-      "arrival.driver.desc": "Details of the driver collecting you from Koh Samui airport — name, vehicle, and contact number.",
+      "arrival.driver.desc": "Details of the driver collecting you from Marrakech Menara Airport — name, vehicle, and contact number.",
       "arrival.driver.pending": "Driver details to be confirmed closer to the date.",
       "map.eyebrow": "FINDING YOUR WAY",
       "map.title": "Getting your bearings",
       "map.sub": "Both maps below are fully interactive — zoom, pan, and explore just like normal Google Maps.",
-      "map.overview.label": "THAILAND OVERVIEW — BANGKOK & KOH SAMUI",
-      "map.closeup.label": "CHAWENG NOI BEACH — THE VILLA IS RIGHT HERE",
+      "map.overview.label": "MOROCCO OVERVIEW — MARRAKECH & THE MEDINA",
+      "map.closeup.label": "JEMAA EL-FNA — THE HEART OF THE MEDINA (VILLA LOCATION TO BE CONFIRMED)",
       "fab.top": "Back to top",
       "fab.whatsapp": "Message Renato",
       "fab.currency": "Currency",
       "fab.menu": "Menu",
-      "footer.text": "SEE YOU IN THAILAND · DAVY'S 60TH · 29 JAN – 11 FEB 2028"
+      "footer.text": "SEE YOU IN MARRAKECH · DAVY'S 60TH · 1 – 11 APRIL 2028"
     },
     fr: {
       "hero.eyebrow": "VOUS ÊTES INVITÉS",
@@ -2306,43 +2329,40 @@
       "name.plusones.hint": "Quelqu'un vous accompagne ? Conjoint, enfants — séparez les noms par des virgules.",
       "name.plusones.placeholder": "ex. Davy, Jamie",
       "welcome.eyebrow": "C'EST BON",
-      "welcome.heading": "Bonjour {name}, nous sommes tellement heureux que vous veniez en Thaïlande pour célébrer les 60 ans de Davy avec nous. Voici tout ce dont vous aurez besoin pour y arriver.",
+      "welcome.heading": "Bonjour {name}, nous sommes tellement heureux que vous veniez à Marrakech pour célébrer les 60 ans de Davy avec nous. Voici tout ce dont vous aurez besoin pour y arriver.",
       "welcome.button": "C'est parti",
-      "hero.title": "Davy fête ses <em>60 ans</em>, en Thaïlande",
-      "hero.dates": "KOH SAMUI · <span style='color:var(--coral)'>DU 29 JANVIER AU 11 FÉVRIER 2028</span>",
-      "hero.sub": "Deux semaines ensemble sur l'île, avec un grand anniversaire au milieu. Jetez un œil et préparez-vous.",
+      "hero.title": "Davy fête ses <em>60 ans</em>, à Marrakech",
+      "hero.dates": "MARRAKECH, MAROC · <span style='color:var(--coral)'>DU 1ER AU 11 AVRIL 2028</span>",
+      "hero.sub": "Onze jours ensemble dans la Ville rouge, avec un grand anniversaire au milieu. Jetez un œil et préparez-vous.",
       "villas.eyebrow": "OÙ NOUS LOGEONS",
-      "villas.title": "Découvrez la Villa Anushka",
-      "villas.sub": "Après avoir tout pesé, c'est celle-ci — un premier aperçu en attendant la description complète et les photos.",
-      "villas.photosoon": "Photos à venir",
-      "villas.anushka.tag": "Notre maison pour la semaine",
-      "villas.anushka.loc": "82, Ban Koh Faan, 53 Village No.3, Tambon Bo Put, Amphoe Ko Samui, Surat Thani 84320, Thaïlande",
-      "villas.anushka.desc": "Détails à venir — revenez bientôt pour découvrir la villa, les chambres, et ce qui la rend spéciale.",
-      "villas.linksoon": "Lien de réservation à venir",
+      "villas.title": "Notre maison à Marrakech",
+      "villas.sub": "Nous choisissons l'endroit idéal — une villa privée avec piscine, assez grande pour nous tous. Nous la dévoilerons ici dès qu'elle sera réservée.",
+      "villas.tbc.tag": "Bientôt",
+      "villas.tbc.title": "Villa à confirmer",
+      "villas.tbc.desc": "Nous étudions des villas privées et des maisons de type riad à Marrakech et alentour, avec piscine, une terrasse pour la grande soirée et de la place pour tout le monde. Photos, adresse et détails d'arrivée seront publiés ici dès que ce sera confirmé.",
       "itin.eyebrow": "LE PROGRAMME",
-      "itin.title": "Quatorze jours, grossièrement planifiés",
+      "itin.title": "Onze jours, grossièrement planifiés",
       "itin.sub": "Rien n'est gravé dans le marbre ici — c'est une trame à remplir ensemble une fois sur place, pas un horaire à suivre à la minute près.",
       "weather.eyebrow": "À QUOI S'ATTENDRE",
-      "weather.title": "La météo début février",
-      "weather.sub": "Bonne nouvelle — début février tombe pile dans la période la plus sèche et la plus ensoleillée de l'année à Koh Samui.",
+      "weather.title": "La météo début avril",
+      "weather.sub": "Bonne nouvelle — début avril est l'une des meilleures périodes pour visiter Marrakech : doux, ensoleillé et plutôt sec, avant la chaleur de l'été.",
       "weather.high": "Température maximale moyenne",
       "weather.low": "Température minimale moyenne",
-      "weather.sea": "Température de la mer",
+      "weather.heat": "Pic lors d'un coup de chaud occasionnel",
       "weather.rain": "Jours de pluie sur le séjour",
       "weather.sun": "Heures d'ensoleillement par jour, en moyenne",
       "weather.uvval": "Très élevé",
       "weather.uvlabel": "Indice UV — la crème solaire n'est pas négociable",
-      "weather.note": "S'il pleut, ce sera plutôt une averse courte et forte qu'une pluie fine toute la journée. L'humidité avoisine 80 %, prévoyez des tissus légers et respirants.",
+      "weather.note": "Les journées sont douces et les soirées peuvent être vraiment fraîches, alors prévoyez des couches. Un coup de chaud peut faire grimper les après-midis vers 30 °C, et une averse de printemps est possible. L'air est sec, l'humidité n'est donc pas un souci.",
       "packing.eyebrow": "PRÉPARATIFS",
       "packing.title": "Quoi emporter",
-      "packing.sub": "Une liste indicative — rien de sophistiqué requis, juste l'essentiel pour le soleil, la mer, et tout le reste.",
+      "packing.sub": "Une liste indicative — rien de sophistiqué requis, juste l'essentiel pour le soleil, les souks, et tout le reste.",
       "packing.everyone.label": "Pour tout le monde",
       "packing.everyone.title": "Les essentiels",
       "packing.babies.label": "Avec des tout-petits",
       "packing.babies.title": "Essentiels bébé & enfant en bas âge",
       "nav.home": "Accueil",
       "nav.villa": "La Villa",
-      "nav.rules": "Dans la villa",
       "nav.whos": "Qui vient",
       "whos.eyebrow": "LA LISTE DES INVITÉS",
       "whos.title": "Qui vient",
@@ -2351,7 +2371,7 @@
       "nav.currency": "Devises",
       "currency.eyebrow": "CÔTÉ FINANCES",
       "currency.title": "Convertisseur de devises",
-      "currency.sub": "Taux de change en direct, fournis par la Banque centrale européenne.",
+      "currency.sub": "Taux de change en direct pour le dirham marocain, mis à jour quotidiennement.",
       "nav.itinerary": "Programme",
       "nav.nearby": "À proximité",
       "nav.extras": "Extras optionnels",
@@ -2360,141 +2380,132 @@
       "extras.sub": "Quelques activités que nous organisons en dehors du programme principal — totalement optionnelles, à vous de voir.",
       "extras.perperson": "par personne",
       "extras.rsvp": "Je participe",
-      "extras.elephant.tag": "Demi-journée",
-      "extras.elephant.name": "Visite du sanctuaire d'éléphants",
-      "extras.elephant.desc": "Une visite éthique et sans contact forcé — on nourrit et observe les éléphants plutôt que de les monter.",
-      "extras.boat.tag": "Soirée",
-      "extras.boat.name": "Croisière au coucher du soleil",
-      "extras.boat.priceNote": "Prix approximatif — confirmé plus près de la date",
-      "extras.boat.desc": "Une soirée sur l'eau à regarder le soleil se coucher sur la côte.",
+      "extras.priceNote": "Prix approximatif — confirmé plus près de la date",
+      "extras.agafay.tag": "Soirée",
+      "extras.agafay.name": "Excursion dans le désert & dîner sous les étoiles",
+      "extras.agafay.desc": "Direction le désert d'Agafay, à environ 45 minutes de la ville, pour chameaux ou quads au coucher du soleil, puis un dîner aux chandelles sous les étoiles.",
+      "extras.atlas.tag": "Journée complète",
+      "extras.atlas.name": "Excursion dans les montagnes de l'Atlas",
+      "extras.atlas.desc": "Échappez-vous de la ville vers les contreforts de l'Atlas — la verte vallée de l'Ourika, des cascades, des vues de montagne et un déjeuner au bord de la rivière.",
+      "extras.massage.tag": "À la villa",
+      "extras.massage.name": "Massage à la villa",
+      "extras.massage.desc": "Un praticien vient à la villa pour un massage au bord de la piscine ou dans votre chambre. Choisissez l'horaire qui vous convient — créneaux à organiser une fois que nous connaîtrons les effectifs.",
+      "extras.cooking.tag": "Demi-journée",
+      "extras.cooking.name": "Cours de cuisine marocaine",
+      "extras.cooking.desc": "Faites vos courses dans un marché local, puis apprenez à préparer un tajine et des salades marocaines — et dégustez ce que vous avez cuisiné.",
       "extras.payment": "Si vous voulez vous joindre à l'une de ces activités, appuyez sur <strong>« Je participe »</strong> pour qu'on puisse réserver le bon nombre de places. Pas de précipitation pour le paiement — vous pouvez régler avant le voyage ou une fois sur place, comme vous préférez. Coordonnées bancaires à venir plus près de la date.",
       "nearby.eyebrow": "ÇA VAUT LE DÉTOUR",
       "nearby.title": "À faire aux alentours",
-      "nearby.sub": "Quelques endroits appréciés près de la villa, pour les journées libres du programme.",
+      "nearby.sub": "Quelques endroits appréciés à Marrakech et alentour, pour les journées libres du programme.",
       "nav.weather": "Météo",
       "nav.packing": "Quoi emporter",
       "nav.travelinfo": "Avant de partir",
       "nav.arrival": "Infos d'arrivée",
       "travel.eyebrow": "SE PRÉPARER",
-      "rules.eyebrow": "LES DÉTAILS PRATIQUES",
-      "rules.title": "Dans la villa",
-      "rules.sub": "Tout sur le séjour à la Villa Anushka — horaires, règles de la maison, et ce qui est à disposition.",
-      "rules.checkin": "Arrivée (après)",
-      "rules.checkout": "Départ (avant)",
-      "rules.maxguests": "Nombre maximum d'invités",
-      "rules.selfcheckin.val": "Enregistrement autonome",
-      "rules.selfcheckin.label": "Avec le personnel du bâtiment",
-      "rules.smoking": "<strong>Il est interdit de fumer à l'intérieur des chambres</strong>, mais c'est autorisé à l'extérieur.",
       "travel.title": "À quoi s'attendre avant de partir",
       "travel.sub": "Une petite liste à régler avant le vol — rien d'urgent, mais mieux vaut s'y prendre tôt.",
       "travel.plug.label": "TYPE DE PRISE",
-      "travel.plug.note": "Les prises britanniques ne rentrent pas dans les prises thaïlandaises — prévoyez un adaptateur.",
+      "travel.plug.note": "Les prises britanniques ne rentrent pas dans les prises marocaines — prévoyez un adaptateur (type C/E, 230 V).",
       "travel.disclaimer": "Les conditions d'entrée peuvent changer — vérifiez toujours les informations officielles plus près de votre date de voyage.",
-      "arrival.eyebrow": "ARRIVÉE EN THAÏLANDE",
+      "arrival.eyebrow": "ARRIVÉE AU MAROC",
       "arrival.title": "Une fois arrivés",
       "arrival.sub": "Quelques points pratiques à régler dès l'atterrissage.",
-      "arrival.samui.title": "Vous arrivez à Koh Samui ?",
-      "arrival.samui.desc": "Nous logeons à Koh Samui, et nous organisons la prise en charge et le transfert depuis l'aéroport de Koh Samui. Si vous passez d'abord par Bangkok, aucun problème — nous avons juste besoin de votre numéro de vol et de l'heure d'arrivée à Koh Samui pour organiser votre transfert.",
-      "arrival.samui.button": "Envoyer mes détails d'arrivée ↗",
+      "arrival.airport.title": "Vous arrivez à Marrakech ?",
+      "arrival.airport.desc": "Nous logeons à Marrakech, et nous organisons la prise en charge et le transfert depuis l'aéroport de Marrakech-Ménara (RAK). Envoyez-nous simplement votre numéro de vol et l'heure d'arrivée pour que nous organisions votre transfert.",
+      "arrival.airport.button": "Envoyer mes détails d'arrivée ↗",
       "arrival.whatsapp.title": "Un souci le jour J ?",
       "arrival.whatsapp.desc": "S'il y a le moindre imprévu — un retard, une correspondance manquée, quoi que ce soit — écrivez directement à Renato sur WhatsApp et on réglera ça ensemble.",
       "arrival.whatsapp.button": "Écrire sur WhatsApp ↗",
       "arrival.driver.title": "Votre chauffeur",
-      "arrival.driver.desc": "Détails du chauffeur qui viendra vous chercher à l'aéroport de Koh Samui — nom, véhicule et numéro de contact.",
+      "arrival.driver.desc": "Détails du chauffeur qui viendra vous chercher à l'aéroport de Marrakech-Ménara — nom, véhicule et numéro de contact.",
       "arrival.driver.pending": "Détails du chauffeur à confirmer plus près de la date.",
       "map.eyebrow": "SE REPÉRER",
       "map.title": "Se repérer sur la carte",
       "map.sub": "Les deux cartes ci-dessous sont entièrement interactives — zoomez, déplacez-vous, explorez comme sur Google Maps normalement.",
-      "map.overview.label": "APERÇU DE LA THAÏLANDE — BANGKOK & KOH SAMUI",
-      "map.closeup.label": "PLAGE DE CHAWENG NOI — LA VILLA EST JUSTE ICI",
+      "map.overview.label": "APERÇU DU MAROC — MARRAKECH & LA MÉDINA",
+      "map.closeup.label": "PLACE JEMAA EL-FNA — LE CŒUR DE LA MÉDINA (EMPLACEMENT DE LA VILLA À CONFIRMER)",
       "fab.top": "Haut de page",
       "fab.whatsapp": "Écrire à Renato",
       "fab.currency": "Devises",
       "fab.menu": "Menu",
-      "footer.text": "RENDEZ-VOUS EN THAÏLANDE · 60 ANS DE DAVY · 29 JAN – 11 FÉV 2028"
+      "footer.text": "RENDEZ-VOUS À MARRAKECH · 60 ANS DE DAVY · 1ER – 11 AVR 2028"
     }
   };
 
   const ITIN = {
     en: [
-      {tag:"DAY 1", d:"Sat 29 Jan", t:"Arrival & Welcome", p:"Check in to the villa through the afternoon. Nothing planned tonight beyond a welcome dinner together — settle in, find your room, get in the pool."},
-      {tag:"DAY 2", d:"Sun 30 Jan", t:"Settle In", p:"A slow first full day. Pool, beach, and no schedule — a good day to shake off the jet lag before things pick up."},
-      {tag:"DAY 3", d:"Mon 31 Jan", t:"Fisherman's Village", p:"An evening in Bophut's Fisherman's Village — a walkable night market and dinner along the old shophouse strip."},
-      {tag:"DAY 4", d:"Tue 1 Feb", t:"Do What You Want Day", p:"Wide open — beach, pool, explore the island, or just do nothing. No plans, on purpose."},
-      {tag:"DAY 5", d:"Wed 2 Feb", t:"Spa Day", p:"A spa day organised by the host — details closer to the time. Sit back and let it happen."},
-      {tag:"DAY 6", d:"Thu 3 Feb", t:"Do What You Want Day", p:"Another wide open one — beach, pool, explore, or just rest up before tomorrow."},
-      {tag:"DAY 7", d:"Fri 4 Feb", t:"Davy's 60th 🎉", p:"A celebration of Davy. More info will be told closer to the day — just be there.", bday:true},
-      {tag:"DAY 8", d:"Sat 5 Feb", t:"Slow Morning", p:"Recovery day, on purpose. Late breakfast, villa time, maybe a walk along the beach in the afternoon."},
-      {tag:"DAY 9", d:"Sun 6 Feb", t:"Sunset Cruise", p:"An evening boat trip along the coast to watch the sun go down over the water — details to follow closer to the date."},
-      {tag:"DAY 10", d:"Mon 7 Feb", t:"Koh Tao Day Trip", p:"An optional full-day trip to Koh Tao for snorkelling in clear water — for anyone up for a longer day out."},
-      {tag:"DAY 11", d:"Tue 8 Feb", t:"Temples & Culture", p:"Morning visit to the Big Buddha and Wat Plai Laem — best done early before the heat and the crowds arrive."},
-      {tag:"DAY 12", d:"Wed 9 Feb", t:"Villa Day & Cooking Class", p:"A quiet one at the villa, with an optional Thai cooking class in the afternoon for anyone interested."},
-      {tag:"DAY 13", d:"Thu 10 Feb", t:"Last Full Day", p:"Open — beach, pool, last-minute shopping in Fisherman's Village, or just soaking up the final full day."},
-      {tag:"DAY 14", d:"Fri 11 Feb", t:"Departure", p:"Final breakfast together, pack up, and head to the airport. Safe travels home."}
+      {tag:"DAY 1", d:"Sat 1 Apr", t:"Arrival & Welcome", p:"Transfers from the airport through the day, then check in to the villa. Nothing planned tonight beyond a welcome dinner together — settle in, find your room, get in the pool."},
+      {tag:"DAY 2", d:"Sun 2 Apr", t:"Settle In", p:"A slow first full day. Pool, terrace, mint tea and no schedule — a good day to shake off the travel before things pick up."},
+      {tag:"DAY 3", d:"Mon 3 Apr", t:"Medina & Jemaa el-Fna", p:"A wander through the souks of the old medina in the morning, then back to the cool of the villa. In the evening, the famous Jemaa el-Fna square comes alive with food stalls, musicians and storytellers."},
+      {tag:"DAY 4", d:"Tue 4 Apr", t:"Majorelle Garden & Gueliz", p:"Morning at the Majorelle Garden and the Yves Saint Laurent Museum, then lunch in the modern Gueliz district. Free afternoon."},
+      {tag:"DAY 5", d:"Wed 5 Apr", t:"Hammam & Spa Day", p:"A traditional hammam and spa day, organised by the host — details closer to the time. Sit back and let it happen."},
+      {tag:"DAY 6", d:"Thu 6 Apr", t:"Davy's 60th 🎉", p:"A celebration of Davy. More info will be told closer to the day — just be there.", bday:true},
+      {tag:"DAY 7", d:"Fri 7 Apr", t:"Slow Morning", p:"Recovery day, on purpose. Late breakfast, pool time, and maybe a gentle wander in the afternoon."},
+      {tag:"DAY 8", d:"Sat 8 Apr", t:"Desert Trip & Dinner Under the Stars", p:"An optional trip out to the Agafay desert — camels or quads at sunset, then dinner under the stars. Details to follow closer to the date."},
+      {tag:"DAY 9", d:"Sun 9 Apr", t:"Atlas Mountains Day Trip", p:"An optional day out to the Atlas Mountains — the green Ourika Valley, waterfalls and a lunch beside the river, with fresh mountain air and a break from the city heat."},
+      {tag:"DAY 10", d:"Mon 10 Apr", t:"Palaces & Last Full Day", p:"Morning at the Bahia Palace and the Saadian Tombs, best done early before the crowds. Then an open afternoon — optional cooking class, last-minute souk shopping, and maybe one last dinner all together."},
+      {tag:"DAY 11", d:"Tue 11 Apr", t:"Departure", p:"Final breakfast together, pack up, and head to the airport. Safe travels home."}
     ],
     fr: [
-      {tag:"JOUR 1", d:"Sam 29 jan", t:"Arrivée & bienvenue", p:"Check-in à la villa dans l'après-midi. Rien de prévu ce soir à part un dîner de bienvenue ensemble — installez-vous, trouvez votre chambre, plongez dans la piscine."},
-      {tag:"JOUR 2", d:"Dim 30 jan", t:"On prend ses marques", p:"Une première journée tranquille. Piscine, plage, et aucun programme — idéal pour se remettre du décalage horaire avant que ça commence vraiment."},
-      {tag:"JOUR 3", d:"Lun 31 jan", t:"Fisherman's Village", p:"Une soirée au Fisherman's Village de Bophut — un marché nocturne à parcourir à pied et un dîner le long des anciennes maisons de commerce."},
-      {tag:"JOUR 4", d:"Mar 1 fév", t:"Journée libre", p:"Grand ouvert — plage, piscine, explorer l'île, ou ne rien faire du tout. Aucun programme, volontairement."},
-      {tag:"JOUR 5", d:"Mer 2 fév", t:"Journée spa", p:"Une journée spa organisée par l'hôte — détails plus près de la date. Installez-vous et profitez."},
-      {tag:"JOUR 6", d:"Jeu 3 fév", t:"Journée libre", p:"Encore une journée grand ouvert — plage, piscine, exploration, ou repos avant demain."},
-      {tag:"JOUR 7", d:"Ven 4 fév", t:"Les 60 ans de Davy 🎉", p:"Une célébration pour Davy. Plus de détails seront communiqués plus près du jour J — soyez juste là.", bday:true},
-      {tag:"JOUR 8", d:"Sam 5 fév", t:"Matinée tranquille", p:"Journée de récupération, volontairement. Petit-déjeuner tardif, temps à la villa, peut-être une balade sur la plage l'après-midi."},
-      {tag:"JOUR 9", d:"Dim 6 fév", t:"Croisière au coucher du soleil", p:"Une sortie en bateau en soirée le long de la côte pour voir le soleil se coucher sur l'eau — détails à confirmer plus près de la date."},
-      {tag:"JOUR 10", d:"Lun 7 fév", t:"Excursion à Koh Tao", p:"Une excursion optionnelle d'une journée à Koh Tao pour faire du snorkeling en eau claire — pour ceux qui sont partants pour une journée plus longue."},
-      {tag:"JOUR 11", d:"Mar 8 fév", t:"Temples & culture", p:"Visite matinale du Big Buddha et du Wat Plai Laem — mieux vaut y aller tôt, avant la chaleur et la foule."},
-      {tag:"JOUR 12", d:"Mer 9 fév", t:"Journée villa & cours de cuisine", p:"Une journée calme à la villa, avec un cours de cuisine thaïlandaise optionnel l'après-midi pour les intéressés."},
-      {tag:"JOUR 13", d:"Jeu 10 fév", t:"Dernière journée complète", p:"Libre — plage, piscine, derniers achats à Fisherman's Village, ou simplement profiter de cette dernière journée."},
-      {tag:"JOUR 14", d:"Ven 11 fév", t:"Départ", p:"Dernier petit-déjeuner ensemble, on fait les valises, direction l'aéroport. Bon retour à tous."}
+      {tag:"JOUR 1", d:"Sam 1 avr", t:"Arrivée & bienvenue", p:"Transferts depuis l'aéroport tout au long de la journée, puis installation à la villa. Rien de prévu ce soir à part un dîner de bienvenue ensemble — installez-vous, trouvez votre chambre, plongez dans la piscine."},
+      {tag:"JOUR 2", d:"Dim 2 avr", t:"On prend ses marques", p:"Une première journée tranquille. Piscine, terrasse, thé à la menthe et aucun programme — idéal pour se remettre du voyage avant que ça commence vraiment."},
+      {tag:"JOUR 3", d:"Lun 3 avr", t:"Médina & Jemaa el-Fna", p:"Une balade dans les souks de la vieille médina le matin, puis retour à la fraîcheur de la villa. Le soir, la célèbre place Jemaa el-Fna s'anime : stands de cuisine, musiciens et conteurs."},
+      {tag:"JOUR 4", d:"Mar 4 avr", t:"Jardin Majorelle & Guéliz", p:"Matinée au Jardin Majorelle et au Musée Yves Saint Laurent, puis déjeuner dans le quartier moderne de Guéliz. Après-midi libre."},
+      {tag:"JOUR 5", d:"Mer 5 avr", t:"Hammam & journée spa", p:"Une journée hammam et spa traditionnels, organisée par l'hôte — détails plus près de la date. Installez-vous et profitez."},
+      {tag:"JOUR 6", d:"Jeu 6 avr", t:"Les 60 ans de Davy 🎉", p:"Une célébration pour Davy. Plus de détails seront communiqués plus près du jour J — soyez juste là.", bday:true},
+      {tag:"JOUR 7", d:"Ven 7 avr", t:"Matinée tranquille", p:"Journée de récupération, volontairement. Petit-déjeuner tardif, piscine, et peut-être une balade tranquille l'après-midi."},
+      {tag:"JOUR 8", d:"Sam 8 avr", t:"Excursion dans le désert & dîner sous les étoiles", p:"Une excursion optionnelle dans le désert d'Agafay — chameaux ou quads au coucher du soleil, puis dîner sous les étoiles. Détails à venir plus près de la date."},
+      {tag:"JOUR 9", d:"Dim 9 avr", t:"Excursion dans l'Atlas", p:"Une journée optionnelle dans les montagnes de l'Atlas — la verte vallée de l'Ourika, des cascades et un déjeuner au bord de la rivière, avec l'air frais de la montagne loin de la chaleur de la ville."},
+      {tag:"JOUR 10", d:"Lun 10 avr", t:"Palais & dernière journée", p:"Matinée au Palais de la Bahia et aux Tombeaux saadiens, mieux vaut y aller tôt, avant la foule. Puis après-midi libre — cours de cuisine optionnel, derniers achats dans les souks, et peut-être un dernier dîner tous ensemble."},
+      {tag:"JOUR 11", d:"Mar 11 avr", t:"Départ", p:"Dernier petit-déjeuner ensemble, on fait les valises, direction l'aéroport. Bon retour à tous."}
     ]
   };
 
   const PACKING = {
     en: {
       everyone: [
-        "Light, breathable clothing (shorts, linen shirts, sundresses)",
-        "Swimwear — bring two, one is always drying",
-        "Reef-safe sunscreen, high SPF",
-        "Sunglasses & a wide-brim hat",
-        "Flip-flops or sandals",
-        "A light rain jacket or poncho — short, heavy showers happen",
-        "Insect repellent",
-        "A modest cover-up for temple visits (shoulders & knees)",
-        "UK-to-Thailand plug adapter",
+        "Light layers — warm by day, but evenings cool to around 11°C",
+        "A light jacket or cardigan for the evenings",
+        "Modest outfits for the medina (shoulders & knees covered) — a light scarf is handy",
+        "Comfortable walking shoes — the souks are cobbled and uneven",
+        "Swimwear for the pool",
+        "Sunscreen (high SPF), sunglasses & a hat",
+        "Sandals or flip-flops for the villa",
+        "A small cross-body bag for the medina",
+        "UK-to-Morocco plug adapter (Type C/E)",
         "A portable phone charger"
       ],
       babies: [
         "Baby-safe, mineral-based sunscreen (SPF 50)",
-        "A UV sun suit or swim shirt",
-        "A pop-up shade tent for the beach",
-        "Mosquito net, safe for infants",
-        "A portable fan for the villa",
+        "A UV sun suit and a sun hat",
+        "A baby carrier — pushchairs struggle in the medina's narrow lanes",
+        "A light blanket for cooler evenings",
         "Familiar snacks & formula — not everything is easy to find locally",
+        "Bottled or boiled water for making up formula",
         "A basic first aid kit (thermometer, infant paracetamol)",
         "Rehydration sachets, just in case"
       ]
     },
     fr: {
       everyone: [
-        "Vêtements légers et respirants (shorts, chemises en lin, robes d'été)",
-        "Maillots de bain — prenez-en deux, il y en a toujours un qui sèche",
-        "Crème solaire respectueuse des récifs, indice élevé",
-        "Lunettes de soleil & chapeau à large bord",
-        "Tongs ou sandales",
-        "Une veste de pluie légère ou un poncho — averses courtes mais fortes possibles",
-        "Répulsif anti-moustiques",
-        "Une tenue couvrante pour les visites de temples (épaules et genoux couverts)",
-        "Adaptateur de prise pour la Thaïlande",
+        "Des couches légères — chaud la journée, mais les soirées fraîchissent autour de 11 °C",
+        "Une veste légère ou un gilet pour les soirées",
+        "Des tenues sobres pour la médina (épaules et genoux couverts) — un foulard léger est utile",
+        "Des chaussures de marche confortables — les souks sont pavés et inégaux",
+        "Maillot de bain pour la piscine",
+        "Crème solaire (indice élevé), lunettes de soleil & chapeau",
+        "Sandales ou tongs pour la villa",
+        "Un petit sac bandoulière pour la médina",
+        "Adaptateur de prise pour le Maroc (type C/E)",
         "Une batterie externe pour le téléphone"
       ],
       babies: [
         "Crème solaire minérale adaptée aux bébés (SPF 50)",
-        "Une combinaison anti-UV ou un tee-shirt de bain",
-        "Une tente pare-soleil pliable pour la plage",
-        "Une moustiquaire adaptée aux nourrissons",
-        "Un ventilateur portable pour la villa",
+        "Une combinaison anti-UV et un chapeau de soleil",
+        "Un porte-bébé — les poussettes peinent dans les ruelles étroites de la médina",
+        "Une couverture légère pour les soirées plus fraîches",
         "Snacks et lait infantile habituels — pas toujours faciles à trouver sur place",
+        "De l'eau en bouteille ou bouillie pour préparer les biberons",
         "Une trousse de premiers secours de base (thermomètre, paracétamol enfant)",
         "Sachets de réhydratation, au cas où"
       ]
@@ -2503,24 +2514,24 @@
 
   const TRAVEL_INFO = {
     en: [
-      {icon:"passport", title:"Passport validity", desc:"Valid passport with at least 6 months remaining from your travel date."},
-      {icon:"visa", title:"Visa", desc:"UK passport holders don't currently need one for a short stay — worth double-checking closer to the date, since the visa-free window is being shortened and rules may change by 2028."},
-      {icon:"cash", title:"Proof of funds", desc:"Immigration can occasionally ask to see roughly 10,000 THB per person (or 20,000 THB per family). Rarely checked, but good to have."},
-      {icon:"exchange", title:"Currency", desc:"Get some Thai Baht converted before you travel, or plan to withdraw on arrival."},
+      {icon:"passport", title:"Passport validity", desc:"Valid passport — we recommend at least 6 months remaining from your travel date, plus a spare blank page."},
+      {icon:"visa", title:"Visa", desc:"UK passport holders currently don't need a visa for stays of up to 90 days. Worth double-checking official guidance closer to the date, since rules may change by 2028."},
+      {icon:"exchange", title:"Currency & cards", desc:"The Moroccan dirham (MAD) is a closed currency, so it's best to withdraw from an ATM on arrival. Cards work in hotels and bigger restaurants, but the medina mostly runs on cash. Only a small amount of dirhams can be taken out of the country."},
+      {icon:"culture", title:"Dress & etiquette", desc:"Morocco is relaxed with visitors, but in the medina it's polite to cover shoulders and knees. Ask before photographing people, and haggling in the souks is part of the fun."},
       {icon:"insurance", title:"Travel insurance", desc:"Take out cover that includes medical emergencies."},
-      {icon:"sim", title:"Phone & data", desc:"Unlocked phone? A local eSIM is easy and cheap — around €10 for 10GB. Otherwise check with your carrier about a Thailand add-on."},
-      {icon:"wifi", title:"Wifi", desc:"The villa has WiFi available throughout."},
-      {icon:"medkit", title:"Medication", desc:"Pack anything you might need — ibuprofen, paracetamol, mosquito repellent, and sun cream."}
+      {icon:"sim", title:"Phone & data", desc:"Unlocked phone? A local eSIM is easy and cheap. Otherwise check with your carrier about Morocco roaming charges."},
+      {icon:"wifi", title:"Wifi", desc:"The villa will have WiFi — details to follow once it's confirmed."},
+      {icon:"medkit", title:"Medication & water", desc:"Pack anything you might need — ibuprofen, paracetamol, stomach settlers, and sun cream. We'd stick to bottled water."}
     ],
     fr: [
-      {icon:"passport", title:"Validité du passeport", desc:"Passeport valide avec au moins 6 mois de validité restante à partir de la date de voyage."},
-      {icon:"visa", title:"Visa", desc:"Les titulaires d'un passeport britannique n'ont actuellement pas besoin de visa pour un court séjour — à vérifier plus près de la date, car cette période sans visa est réduite et les règles pourraient changer d'ici 2028."},
-      {icon:"cash", title:"Preuve de fonds", desc:"L'immigration peut parfois demander environ 10 000 THB par personne (ou 20 000 THB par famille). Rarement vérifié, mais bon à avoir."},
-      {icon:"exchange", title:"Devise", desc:"Faites convertir des bahts thaïlandais avant de partir, ou prévoyez un retrait à l'arrivée."},
+      {icon:"passport", title:"Validité du passeport", desc:"Passeport valide — nous recommandons au moins 6 mois de validité restante à partir de la date de voyage, plus une page vierge."},
+      {icon:"visa", title:"Visa", desc:"Les titulaires d'un passeport britannique n'ont actuellement pas besoin de visa pour un séjour de 90 jours maximum. À vérifier plus près de la date, car les règles pourraient changer d'ici 2028."},
+      {icon:"exchange", title:"Devise & cartes", desc:"Le dirham marocain (MAD) est une monnaie fermée : le plus simple est de retirer au distributeur à l'arrivée. Les cartes passent dans les hôtels et les grands restaurants, mais la médina fonctionne surtout en espèces. Seule une petite somme en dirhams peut sortir du pays."},
+      {icon:"culture", title:"Tenue & usages", desc:"Le Maroc est accueillant envers les visiteurs, mais dans la médina il est poli de couvrir épaules et genoux. Demandez avant de photographier les gens, et marchander dans les souks fait partie du plaisir."},
       {icon:"insurance", title:"Assurance voyage", desc:"Souscrivez une assurance couvrant les urgences médicales."},
-      {icon:"sim", title:"Téléphone & données", desc:"Téléphone débloqué ? Une eSIM locale est simple et peu coûteuse — environ 10€ pour 10 Go. Sinon, vérifiez les options d'itinérance auprès de votre opérateur."},
-      {icon:"wifi", title:"Wifi", desc:"La villa dispose du WiFi partout."},
-      {icon:"medkit", title:"Médicaments", desc:"Emportez ce dont vous pourriez avoir besoin — ibuprofène, paracétamol, répulsif anti-moustiques et crème solaire."}
+      {icon:"sim", title:"Téléphone & données", desc:"Téléphone débloqué ? Une eSIM locale est simple et peu coûteuse. Sinon, vérifiez les frais d'itinérance au Maroc auprès de votre opérateur."},
+      {icon:"wifi", title:"Wifi", desc:"La villa disposera du WiFi — détails à venir une fois qu'elle sera confirmée."},
+      {icon:"medkit", title:"Médicaments & eau", desc:"Emportez ce dont vous pourriez avoir besoin — ibuprofène, paracétamol, remède contre les maux d'estomac et crème solaire. Nous vous conseillons de boire de l'eau en bouteille."}
     ]
   };
 
@@ -2529,59 +2540,35 @@
     visa: '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 9h18"/>',
     cash: '<rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="12" cy="12" r="3"/>',
     exchange: '<path d="M7 7h11l-3-3M17 17H6l3 3"/>',
+    culture: '<circle cx="12" cy="7" r="3"/><path d="M6 21v-3a6 6 0 0 1 12 0v3"/>',
     insurance: '<path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/>',
     sim: '<rect x="6" y="3" width="12" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h3"/>',
     wifi: '<path d="M4 9a14 14 0 0 1 16 0M7 12.5a9 9 0 0 1 10 0M10.5 16a4 4 0 0 1 3 0"/><circle cx="12" cy="19" r="0.8" fill="currentColor"/>',
     medkit: '<rect x="3" y="7" width="18" height="12" rx="2"/><path d="M12 10v6M9 13h6"/>'
   };
 
-  const RULE_TAGS = {
-    en: ["Commercial photography allowed", "Smoking allowed (outside only)", "Pets allowed — assistance animals always welcome", "Breakfast provided", "Long-term stays allowed (28+ days)", "Cleaning available during stay"],
-    fr: ["Photographie commerciale autorisée", "Fumeurs autorisés (extérieur uniquement)", "Animaux acceptés — animaux d'assistance toujours bienvenus", "Petit-déjeuner inclus", "Séjours longue durée acceptés (28 jours et plus)", "Ménage disponible pendant le séjour"]
-  };
-
-  const AMENITIES = {
+  const NEARBY = {
     en: [
-      {cat:"Scenic Views", items:"Beach view, ocean view, pool view, sea view"},
-      {cat:"Bathroom", items:"Bath, hairdryer, cleaning products, shampoo, body soap, outdoor shower, hot water, shower gel"},
-      {cat:"Bedroom & Laundry", items:"Washing machine, towels & bed sheets, hangers, extra pillows & blankets, room-darkening blinds, iron, clothes drying rack, safe, wardrobe"},
-      {cat:"Entertainment", items:"TV, sound system, exercise equipment, pool table, cinema room"},
-      {cat:"Family", items:"Cot, high chair, board games, babysitter recommendations"},
-      {cat:"Heating & Cooling", items:"Air conditioning, ceiling fans"},
-      {cat:"Home Safety", items:"Fire extinguisher, first aid kit"},
-      {cat:"Internet & Office", items:"WiFi throughout, dedicated workspace in a room with a door"},
-      {cat:"Kitchen & Dining", items:"Full kitchen, fridge, freezer, microwave, dishwasher, cooker, oven, kettle, coffee maker, toaster, blender, rice cooker, BBQ utensils, dining table, cooking basics, crockery & cutlery, wine glasses, coffee"},
-      {cat:"Location", items:"Private entrance"},
-      {cat:"Outdoor", items:"Private patio or balcony, back garden, outdoor furniture, outdoor dining area, sun loungers"},
-      {cat:"Parking & Pool", items:"Free parking on premises, private infinity pool (open 24 hours, all year)"},
-      {cat:"Services", items:"Self check-in, building staff on hand 24 hours, cleaning available during stay"}
+      {tag:"Evening", name:"Jemaa el-Fna", desc:"The great square at the heart of the medina. By day it's snake charmers and orange-juice carts; after sunset it turns into a huge open-air food market with musicians and storytellers.", link:"https://www.google.com/maps/search/Jemaa+el-Fna+Marrakech"},
+      {tag:"Shopping", name:"The Souks", desc:"A maze of covered lanes selling spices, lanterns, leather, rugs and ceramics. Haggle with a smile, and expect to get a little lost — that's half the fun.", link:"https://www.google.com/maps/search/Souk+Semmarine+Marrakech"},
+      {tag:"Morning", name:"Majorelle Garden & YSL Museum", desc:"A cobalt-blue villa surrounded by cactus and bamboo gardens, once home to Yves Saint Laurent, with a museum next door. Book timed tickets ahead and go early.", link:"https://www.google.com/maps/search/Jardin+Majorelle+Marrakech"},
+      {tag:"Palace", name:"Bahia Palace", desc:"A 19th-century palace of painted cedar ceilings, zellige tilework and quiet courtyards — cool, calm and very photogenic.", link:"https://www.google.com/maps/search/Bahia+Palace+Marrakech"},
+      {tag:"History", name:"Saadian Tombs", desc:"A royal burial ground sealed off for centuries and rediscovered in 1917, with intricately carved halls and a peaceful garden. Short visit, big payoff.", link:"https://www.google.com/maps/search/Saadian+Tombs+Marrakech"},
+      {tag:"Quiet", name:"Le Jardin Secret", desc:"A restored palace garden tucked away in the medina, with Islamic and exotic gardens and a tower with views over the rooftops.", link:"https://www.google.com/maps/search/Le+Jardin+Secret+Marrakech"},
+      {tag:"Landmark", name:"Koutoubia Mosque", desc:"The 12th-century minaret that towers over the city and guides you home. Non-Muslims can't enter, but the grounds and gardens around it are lovely.", link:"https://www.google.com/maps/search/Koutoubia+Mosque+Marrakech"},
+      {tag:"Day trip", name:"Atlas Mountains & Ourika Valley", desc:"Snow-capped peaks and a green valley about an hour from the city, with waterfalls and river-side lunches. A good cool-down from the heat.", link:"https://www.google.com/maps/search/Ourika+Valley+Morocco"}
     ],
     fr: [
-      {cat:"Vues", items:"Vue sur la plage, vue sur l'océan, vue sur la piscine, vue sur la mer"},
-      {cat:"Salle de bain", items:"Baignoire, sèche-cheveux, produits d'entretien, shampooing, savon, douche extérieure, eau chaude, gel douche"},
-      {cat:"Chambre et linge", items:"Lave-linge, serviettes et draps, cintres, oreillers et couvertures supplémentaires, rideaux occultants, fer à repasser, étendoir à linge, coffre-fort, penderie"},
-      {cat:"Divertissement", items:"TV, système audio, équipement de fitness, billard, salle de cinéma"},
-      {cat:"Famille", items:"Lit bébé, chaise haute, jeux de société, recommandations de baby-sitter"},
-      {cat:"Chauffage et climatisation", items:"Climatisation, ventilateurs de plafond"},
-      {cat:"Sécurité", items:"Extincteur, trousse de premiers secours"},
-      {cat:"Internet et bureau", items:"WiFi partout, espace de travail dédié dans une pièce avec porte"},
-      {cat:"Cuisine et repas", items:"Cuisine complète, réfrigérateur, congélateur, micro-ondes, lave-vaisselle, cuisinière, four, bouilloire, cafetière, grille-pain, blender, cuiseur à riz, ustensiles de barbecue, table à manger, ustensiles de base, vaisselle et couverts, verres à vin, café"},
-      {cat:"Emplacement", items:"Entrée privée"},
-      {cat:"Extérieur", items:"Patio ou balcon privé, jardin, mobilier extérieur, coin repas extérieur, transats"},
-      {cat:"Parking et piscine", items:"Parking gratuit sur place, piscine à débordement privée (ouverte 24h/24, toute l'année)"},
-      {cat:"Services", items:"Enregistrement autonome, personnel sur place 24h/24, ménage disponible pendant le séjour"}
+      {tag:"Soirée", name:"Jemaa el-Fna", desc:"La grande place au cœur de la médina. De jour, charmeurs de serpents et marchands de jus d'orange ; après le coucher du soleil, elle devient un immense marché de cuisine en plein air avec musiciens et conteurs.", link:"https://www.google.com/maps/search/Jemaa+el-Fna+Marrakech"},
+      {tag:"Shopping", name:"Les souks", desc:"Un dédale de ruelles couvertes où l'on vend épices, lanternes, cuir, tapis et céramiques. Marchandez avec le sourire, et attendez-vous à vous perdre un peu — c'est la moitié du plaisir.", link:"https://www.google.com/maps/search/Souk+Semmarine+Marrakech"},
+      {tag:"Matin", name:"Jardin Majorelle & Musée YSL", desc:"Une villa bleu cobalt entourée de jardins de cactus et de bambous, ancienne demeure d'Yves Saint Laurent, avec un musée juste à côté. Réservez des billets horodatés et allez-y tôt.", link:"https://www.google.com/maps/search/Jardin+Majorelle+Marrakech"},
+      {tag:"Palais", name:"Palais de la Bahia", desc:"Un palais du XIXe siècle aux plafonds de cèdre peints, zelliges et cours paisibles — frais, calme et très photogénique.", link:"https://www.google.com/maps/search/Bahia+Palace+Marrakech"},
+      {tag:"Histoire", name:"Tombeaux saadiens", desc:"Une nécropole royale murée pendant des siècles et redécouverte en 1917, avec des salles finement sculptées et un jardin paisible. Visite courte, grand effet.", link:"https://www.google.com/maps/search/Saadian+Tombs+Marrakech"},
+      {tag:"Calme", name:"Le Jardin Secret", desc:"Un jardin de palais restauré, caché dans la médina, avec des jardins islamique et exotique et une tour offrant une vue sur les toits.", link:"https://www.google.com/maps/search/Le+Jardin+Secret+Marrakech"},
+      {tag:"Monument", name:"Mosquée Koutoubia", desc:"Le minaret du XIIe siècle qui domine la ville et vous guide pour rentrer. Les non-musulmans ne peuvent pas entrer, mais les jardins autour sont superbes.", link:"https://www.google.com/maps/search/Koutoubia+Mosque+Marrakech"},
+      {tag:"Excursion", name:"Montagnes de l'Atlas & vallée de l'Ourika", desc:"Des sommets enneigés et une vallée verdoyante à environ une heure de la ville, avec cascades et déjeuners au bord de la rivière. Une bonne façon de se rafraîchir loin de la chaleur.", link:"https://www.google.com/maps/search/Ourika+Valley+Morocco"}
     ]
   };
-
-  function renderRules(lang){
-    const tagsEl = document.getElementById('rules-tags');
-    tagsEl.innerHTML = RULE_TAGS[lang].map(t => `<span class="rule-tag">${t}</span>`).join('');
-
-    const grid = document.getElementById('amenity-grid');
-    grid.innerHTML = AMENITIES[lang].map(a => `
-      <div class="amenity-card"><h4>${a.cat}</h4><p>${a.items}</p></div>
-    `).join('');
-  }
 
   function renderTravelInfo(lang){
     const grid = document.getElementById('travel-card-grid');
@@ -2646,40 +2633,18 @@
     renderItinerary(lang);
     renderPacking(lang);
     renderTravelInfo(lang);
-    renderRules(lang);
     renderNearby(lang);
     updateMailtoLink(lang);
   }
 
   function updateMailtoLink(lang){
-    const subject = lang === 'fr' ? "Mes détails d'arrivée à Koh Samui" : "My Koh Samui arrival details";
+    const subject = lang === 'fr' ? "Mes détails d'arrivée à Marrakech" : "My Marrakech arrival details";
     const body = lang === 'fr'
-      ? "Bonjour Renato,\n\nVoici mes détails d'arrivée à Koh Samui :\n\nNom :\nDate d'arrivée :\nNuméro de vol :\nHeure d'arrivée :\n\nMerci !"
-      : "Hi Renato,\n\nHere are my Koh Samui arrival details:\n\nName:\nArrival date:\nFlight number:\nArrival time:\n\nThanks!";
+      ? "Bonjour Renato,\n\nVoici mes détails d'arrivée à Marrakech :\n\nNom :\nDate d'arrivée :\nNuméro de vol :\nHeure d'arrivée :\n\nMerci !"
+      : "Hi Renato,\n\nHere are my Marrakech arrival details:\n\nName:\nArrival date:\nFlight number:\nArrival time:\n\nThanks!";
     const link = document.getElementById('arrival-email-btn');
     if(link) link.href = `mailto:nado90@me.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   }
-
-  const NEARBY = {
-    en: [
-      {tag:"Half-day", name:"Tarnim Magic Garden", desc:"Also called the Secret Buddha Garden — a quiet sculpture garden hidden in the hills atop Pom Mountain, built over decades by a local farmer. Moss-covered statues, small waterfalls, jungle paths. Best early morning or late afternoon; a car or 4x4 is needed for the steep road up.", link:"https://www.google.com/maps/search/Tarnim+Magic+Garden+Koh+Samui"},
-      {tag:"Food & shops", name:"Fisherman's Village", desc:"Bophut's old fishing-village shophouses, now full of restaurants, bars, and boutique shops. A big walking-street night market runs every Friday.", link:"https://www.google.com/maps/search/Fisherman's+Village+Bophut"},
-      {tag:"Evening", name:"Lamai Night Market", desc:"Street food stalls and market browsing in Lamai — a good, casual dinner option with a proper night-market atmosphere.", link:"https://www.google.com/maps/search/Lamai+Night+Market+Koh+Samui"},
-      {tag:"Beach", name:"Silver Beach", desc:"Also called Thongtakian — one of the prettiest, quietest stretches of white sand on the island, away from the bigger crowds.", link:"https://www.google.com/maps/search/Silver+Beach+Thongtakian+Koh+Samui"},
-      {tag:"Beach", name:"Lamai Beach", desc:"The island's second most popular beach, known for the granite rock formations nicknamed Grandmother and Grandfather Rocks.", link:"https://www.google.com/maps/search/Lamai+Beach+Koh+Samui"},
-      {tag:"Temple", name:"Big Buddha Temple", desc:"Wat Phra Yai — the golden seated Buddha watching over the island, one of Koh Samui's most-visited landmarks.", link:"https://www.google.com/maps/search/Wat+Phra+Yai+Big+Buddha+Koh+Samui"},
-      {tag:"Temple", name:"Wat Plai Laem", desc:"A striking temple with a large multi-armed Guanyin statue and a laughing Buddha — very photogenic, worth the short visit.", link:"https://www.google.com/maps/search/Wat+Plai+Laem+Koh+Samui"}
-    ],
-    fr: [
-      {tag:"Demi-journée", name:"Tarnim Magic Garden", desc:"Aussi appelé le Secret Buddha Garden — un jardin de sculptures paisible caché dans les collines au sommet du mont Pom, construit sur des décennies par un fermier local. Statues couvertes de mousse, petites cascades, sentiers dans la jungle. Idéal tôt le matin ou en fin d'après-midi ; une voiture ou un 4x4 est nécessaire pour la route escarpée.", link:"https://www.google.com/maps/search/Tarnim+Magic+Garden+Koh+Samui"},
-      {tag:"Restos & boutiques", name:"Fisherman's Village", desc:"Les anciennes maisons de pêcheurs de Bophut, aujourd'hui pleines de restaurants, bars et boutiques. Un grand marché nocturne a lieu tous les vendredis.", link:"https://www.google.com/maps/search/Fisherman's+Village+Bophut"},
-      {tag:"Soirée", name:"Marché de nuit de Lamai", desc:"Stands de street food et marché à Lamai — une option de dîner décontractée avec une vraie ambiance de marché nocturne.", link:"https://www.google.com/maps/search/Lamai+Night+Market+Koh+Samui"},
-      {tag:"Plage", name:"Silver Beach", desc:"Aussi appelée Thongtakian — l'une des plus belles plages de l'île, calme et peu fréquentée, avec du sable blanc immaculé.", link:"https://www.google.com/maps/search/Silver+Beach+Thongtakian+Koh+Samui"},
-      {tag:"Plage", name:"Lamai Beach", desc:"La deuxième plage la plus populaire de l'île, connue pour ses formations rocheuses granitiques surnommées les rochers Grand-mère et Grand-père.", link:"https://www.google.com/maps/search/Lamai+Beach+Koh+Samui"},
-      {tag:"Temple", name:"Big Buddha Temple", desc:"Wat Phra Yai — le grand Bouddha doré assis qui veille sur l'île, l'un des sites les plus visités de Koh Samui.", link:"https://www.google.com/maps/search/Wat+Phra+Yai+Big+Buddha+Koh+Samui"},
-      {tag:"Temple", name:"Wat Plai Laem", desc:"Un temple spectaculaire avec une grande statue de Guanyin aux bras multiples et un bouddha rieur — très photogénique, la visite vaut le détour.", link:"https://www.google.com/maps/search/Wat+Plai+Laem+Koh+Samui"}
-    ]
-  };
 
   function renderNearby(lang){
     const grid = document.getElementById('nearby-grid');
@@ -2708,71 +2673,44 @@
     document.getElementById('hamburger-btn').classList.toggle('open');
   }
 
-  /* ---------------- VILLA PHOTO CAROUSEL ---------------- */
+  /* ---------------- CURRENCY CONVERTER (MAD -> EUR / GBP) ---------------- */
 
-  const PHOTO_COUNT = 74;
-  let carouselIndex = 0;
-  const photoSrcs = Array.from({length: PHOTO_COUNT}, (_, i) => `villa-${String(i+1).padStart(2,'0')}.jpg`);
-  // Show photo 2 as the main/first image, then photo 1, then the rest in order
-  [photoSrcs[0], photoSrcs[1]] = [photoSrcs[1], photoSrcs[0]];
+  let madToEur = null;
+  let madToGbp = null;
 
-  function renderCarousel(){
-    const main = document.getElementById('carousel-main');
-    const thumbs = document.getElementById('carousel-thumbs');
-
-    photoSrcs.forEach((src, i) => {
-      const img = document.createElement('img');
-      img.src = src;
-      img.alt = `Villa Anushka photo ${i+1}`;
-      img.loading = i < 3 ? 'eager' : 'lazy';
-      if(i === 0) img.classList.add('active');
-      img.onclick = () => openLightbox(src);
-      main.appendChild(img);
-
-      const thumb = document.createElement('img');
-      thumb.src = src;
-      thumb.loading = 'lazy';
-      if(i === 0) thumb.classList.add('active');
-      thumb.onclick = () => setCarousel(i);
-      thumbs.appendChild(thumb);
-    });
-
-    updateCarouselCount();
+  async function fetchMadRates(){
+    // 1) open.er-api.com  2) jsDelivr currency-api  3) Cloudflare Pages mirror
+    try{
+      const r = await fetch('https://open.er-api.com/v6/latest/MAD');
+      const d = await r.json();
+      if(d && d.result === 'success' && d.rates && d.rates.EUR && d.rates.GBP){
+        return {eur:d.rates.EUR, gbp:d.rates.GBP, date:(d.time_last_update_utc ? new Date(d.time_last_update_utc).toISOString().slice(0,10) : '')};
+      }
+    } catch(e){}
+    const mirrors = [
+      'https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/mad.json',
+      'https://latest.currency-api.pages.dev/v1/currencies/mad.json'
+    ];
+    for(const url of mirrors){
+      try{
+        const r = await fetch(url);
+        const d = await r.json();
+        if(d && d.mad && d.mad.eur && d.mad.gbp) return {eur:d.mad.eur, gbp:d.mad.gbp, date:d.date || ''};
+      } catch(e){}
+    }
+    return null;
   }
-
-  function setCarousel(i){
-    carouselIndex = (i + PHOTO_COUNT) % PHOTO_COUNT;
-    document.querySelectorAll('#carousel-main img').forEach((img, idx) => img.classList.toggle('active', idx === carouselIndex));
-    document.querySelectorAll('#carousel-thumbs img').forEach((img, idx) => img.classList.toggle('active', idx === carouselIndex));
-    const activeThumb = document.querySelectorAll('#carousel-thumbs img')[carouselIndex];
-    if(activeThumb) activeThumb.scrollIntoView({behavior:'smooth', inline:'center', block:'nearest'});
-    updateCarouselCount();
-  }
-
-  function carouselMove(delta){ setCarousel(carouselIndex + delta); }
-
-  function updateCarouselCount(){
-    document.getElementById('carousel-count').textContent = `${carouselIndex + 1} / ${PHOTO_COUNT}`;
-  }
-
-  renderCarousel();
-
-  /* ---------------- CURRENCY CONVERTER (live ECB rates via Frankfurter) ---------------- */
-
-  let thbToEur = null;
-  let thbToGbp = null;
 
   async function loadRates(){
     const updatedEl = document.getElementById('currency-updated');
-    try{
-      const res = await fetch('https://api.frankfurter.dev/v1/latest?amount=1&base=THB&symbols=EUR,GBP');
-      const data = await res.json();
-      thbToEur = data.rates.EUR;
-      thbToGbp = data.rates.GBP;
+    const rates = await fetchMadRates();
+    if(rates){
+      madToEur = rates.eur;
+      madToGbp = rates.gbp;
       const prefix = currentLang === 'fr' ? 'Taux mis à jour : ' : 'Rates updated: ';
-      updatedEl.textContent = prefix + data.date;
+      updatedEl.textContent = rates.date ? prefix + rates.date : '';
       updateCurrencyOutputs();
-    } catch(e){
+    } else {
       updatedEl.textContent = currentLang === 'fr'
         ? "Taux indisponibles pour le moment — réessayez plus tard."
         : "Rates unavailable right now — try again shortly.";
@@ -2780,12 +2718,12 @@
   }
 
   function updateCurrencyOutputs(){
-    const amount = parseFloat(document.getElementById('thb-input').value) || 0;
-    document.getElementById('eur-output').textContent = (thbToEur !== null) ? '€' + (amount * thbToEur).toFixed(2) : '—';
-    document.getElementById('gbp-output').textContent = (thbToGbp !== null) ? '£' + (amount * thbToGbp).toFixed(2) : '—';
+    const amount = parseFloat(document.getElementById('mad-input').value) || 0;
+    document.getElementById('eur-output').textContent = (madToEur !== null) ? '€' + (amount * madToEur).toFixed(2) : '—';
+    document.getElementById('gbp-output').textContent = (madToGbp !== null) ? '£' + (amount * madToGbp).toFixed(2) : '—';
   }
 
-  document.getElementById('thb-input').addEventListener('input', updateCurrencyOutputs);
+  document.getElementById('mad-input').addEventListener('input', updateCurrencyOutputs);
   /* ---------------- WHO'S COMING (shared guest list via jsonblob) ---------------- */
 
   const GUESTLIST_URL = 'https://jsonblob.com/api/jsonBlob/019fc35e-26bf-7312-a9ce-000e0ae013fc';
@@ -2795,7 +2733,7 @@
     try{
       const res = await fetch(EXTRAS_URL);
       const data = await res.json();
-      ['elephant','boat'].forEach(key => {
+      ['agafay','atlas','massage','cooking'].forEach(key => {
         const el = document.querySelector(`[data-extra-count="${key}"]`);
         const list = data[key] || [];
         el.textContent = `${list.length} ${list.length === 1 ? 'joining' : 'joining'}`;
@@ -2904,62 +2842,6 @@
   renderWhosComing();
 
   loadRates();
-
-  function openLightbox(src){
-    document.getElementById('lightbox-img').src = src;
-    document.getElementById('lightbox').classList.add('open');
-  }
-  function closeLightbox(e){
-    if(e) e.stopPropagation();
-    document.getElementById('lightbox').classList.remove('open');
-  }
-
-  /* ---------------- VILLA VOTING (shared, via CountAPI) ---------------- */
-
-  const NS = 'davys60th-samui-2028-v1';
-  const villaKeys = ['villa-aruna','villa-hin','villa-laplaya'];
-
-  async function loadCounts(){
-    for(const key of villaKeys){
-      const el = document.querySelector(`[data-count="${key}"]`);
-      try{
-        const res = await fetch(`https://api.countapi.xyz/get/${NS}/${key}`);
-        const data = await res.json();
-        el.textContent = (data.value || 0) + (data.value === 1 ? ' vote' : ' votes');
-      } catch(e){
-        el.textContent = '– votes';
-      }
-    }
-  }
-
-  async function toggleVote(btn){
-    const key = btn.getAttribute('data-villa');
-    const el = document.querySelector(`[data-count="${key}"]`);
-    const votedFlag = 'voted_' + key;
-    const alreadyVoted = localStorage.getItem(votedFlag) === '1';
-
-    btn.disabled = true;
-    try{
-      if(!alreadyVoted){
-        const res = await fetch(`https://api.countapi.xyz/hit/${NS}/${key}`);
-        const data = await res.json();
-        el.textContent = data.value + (data.value === 1 ? ' vote' : ' votes');
-        localStorage.setItem(votedFlag, '1');
-        btn.classList.add('voted');
-      } else {
-        const res = await fetch(`https://api.countapi.xyz/update/${NS}/${key}?amount=-1`);
-        const data = await res.json();
-        el.textContent = Math.max(0,data.value) + (data.value === 1 ? ' vote' : ' votes');
-        localStorage.removeItem(votedFlag);
-        btn.classList.remove('voted');
-      }
-    } catch(e){
-      // offline fallback: just toggle the visual state
-      btn.classList.toggle('voted');
-      if(!alreadyVoted) localStorage.setItem(votedFlag,'1'); else localStorage.removeItem(votedFlag);
-    }
-    btn.disabled = false;
-  }
 
 </script>
 
